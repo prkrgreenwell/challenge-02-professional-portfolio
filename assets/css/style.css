@@ -24,7 +24,7 @@ header {
 
 .content {
     display: flex;
-
+    flex-direction: column;
     width: 83%;
     background-color: var(--light);
     margin: 20vh 10% 20vh 15%;
@@ -54,13 +54,13 @@ header h1 {
 
 .box h2 {
     font-size: 2rem;
+    width: 120px;
 }
 
 .vl {
     border-left: 6px solid var(--dark);
-    height: 100%;
-    margin-left: 20px;
-    margin-right: 20px; 
+    width: 0;
+    margin: 20px;
   }
 
   .blurb {
