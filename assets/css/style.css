@@ -11,6 +11,7 @@
 body {
     background: linear-gradient(45deg,  var(--cobalt) 40%, var(--light));
     height: 100vh;
+    margin: 0;
 }
 header {
     height: 100px;
@@ -18,14 +19,15 @@ header {
     background-color: var(--dark);
     color: var(--light);
     display: flex;
+    margin: 0;
 }
 
 .content {
     display: flex;
 
-    width: 100%;
+    width: 83%;
     background-color: var(--light);
-    margin: 20vh 0 20vh 15vw;
+    margin: 20vh 10% 20vh 15%;
     padding: 20px 20px 20px 20px;
 }
 
@@ -45,9 +47,27 @@ header h1 {
     align-items: flex-end;
 }
 
-
-
-#personal-photo {
+.box {
     display: flex;
-    align-items: right;
+    color: var(--dark);
 }
+
+.box h2 {
+    font-size: 2rem;
+}
+
+.vl {
+    border-left: 6px solid var(--dark);
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
+
+  .blurb {
+    font-size: 1.3rem;
+  }
+
+  #personal-photo {
+    width: 35vh;
+    height: auto;
+  }
