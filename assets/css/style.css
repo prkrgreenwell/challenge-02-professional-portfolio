@@ -39,9 +39,10 @@ header .navigation h2 {
     text-align: center;
 }
 
-.content {
+.content .box {
     background-color: var(--light);
     color: var(--dark);
+    margin-top: 30px;
 }
 
 
@@ -52,3 +53,20 @@ header .navigation h2 {
     margin: 0 auto;
 }
 
+.project {
+    width: 90vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project h3 {
+    background-color: var(--cobalt);
+    color: var(--light);
+    margin-top: 0;
+    width: 80vw;
+}
+
+.project:hover {
+    opacity: 0.5;
+}
