@@ -96,3 +96,36 @@ header .navigation h2:hover {
     color: var(--light);
 }
 
+@media screen and (min-width: 426px) {
+    header .navigation {
+        height: 100%;
+        width: 100%;
+        background-color: var(--light);
+        color: var(--dark);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    header .navigation h2 {
+        border-style: none;
+    }
+
+    #personal-photo {
+        width: 35vw;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        float: right;
+    }
+
+    .project h3 {
+        width: 40vw;
+    }
+
+    #my-projects {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+}
