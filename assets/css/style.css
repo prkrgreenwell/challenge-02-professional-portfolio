@@ -66,22 +66,36 @@ header .navigation h2:hover {
     margin: 0 auto;
 }
 
-.project {
+.project img {
     width: 90vw;
     height: auto;
-    display: block;
-    margin: 0 auto;
+    min-height: 190px;
+    margin: 10px auto 0 auto;
 }
 
 .project h3 {
     background-color: var(--cobalt);
     color: var(--light);
-    margin-top: 0;
-    width: 80vw;
+    margin: 0;
+    width: 90vw;
+
+}
+
+.project {
+    width: 90vw;
+    height: auto;
+    display: block;
+    margin: 0;
 }
 
 .project:hover {
     opacity: 0.5;
+}
+
+#my-projects {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #contact-me p {
@@ -112,20 +126,83 @@ header .navigation h2:hover {
     }
 
     #personal-photo {
-        width: 35vw;
+        width: 30vw;
         height: auto;
         display: block;
         margin: 0 auto;
         float: right;
     }
 
+
+    .project img {
+        width: 80vw;
+        height: auto;
+        min-height: 190px;
+    }
+    
     .project h3 {
-        width: 40vw;
+        width: 80vw;
+
     }
 
-    #my-projects {
-        display: flex;
-        flex-wrap: wrap;
+
+
+
+}
+
+@media screen and (min-width: 1020px) {
+    header h1 {
+        font-size: 4rem;
+        justify-content: left;
+        padding: 50px;
+        margin-right: -50px;
         
     }
+
+    h2 {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    #about-me p {
+        font-size: 2rem;
+        padding: 15px;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+    }
+
+    .vl {
+        border-left: 6px solid var(--cobalt);
+        height: 500px;
+        padding-left: 20px;
+      }
+
+      #personal-photo {
+        float: right;
+        order: 1;
+        margin: 40px;
+      }
+
+      .project img {
+        width: 20vw;
+      }
+
+      .project h3 {
+        width: 20vw;
+      }
+
+      .project {
+        width: 76vw;
+        display: flexbox;
+        flex-wrap: wrap;
+      }
+
+      #contact-me {
+        display: flex;
+        justify-content: space-evenly;
+      }
 }
